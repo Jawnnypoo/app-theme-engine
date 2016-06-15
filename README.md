@@ -1,4 +1,4 @@
-#### This library is on hold for now.
+#### This library was originally created by https://github.com/afollestad and then randomly removed from GitHub. This is a fork of the latest code before it was removed.
 
 # App Theme Engine
 
@@ -15,7 +15,7 @@ You can also get it through Google Play, with the badge below. The sample's icon
        src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height="60"/>
 </a>
 
-![Showcase](https://raw.githubusercontent.com/afollestad/app-theme-engine/master/art/showcase.png)
+![Showcase](/art/showcase.png)
 
 # When To NOT Use This Library
 
@@ -85,7 +85,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 ```gradle
 dependencies {
 	...
-	compile('com.github.afollestad:app-theme-engine:1.0.0@aar') {
+	compile('com.github.Jawnnypoo:app-theme-engine:1.0.1@aar') {
 		transitive = true
 	}
 }
