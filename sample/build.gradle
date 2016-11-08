@@ -1,17 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
-
-    // Note-to-self: sample uses Cabinet's keystore
-
-    applicationVariants.all { variant ->
-        variant.outputs.each { output ->
-            output.outputFile = new File(
-                    output.outputFile.parent, "Sample.apk")
-        }
-    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
 
     lintOptions {
         abortOnError false
@@ -19,9 +10,9 @@ android {
     defaultConfig {
         applicationId "com.afollestad.appthemeenginesample"
         minSdkVersion 14
-        targetSdkVersion 23
-        versionCode 3
-        versionName "1.0.0"
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
     }
     buildTypes {
         release {
@@ -32,13 +23,13 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:appcompat-v7:25.0.0'
     compile('com.github.afollestad.material-dialogs:core:0.8.5.8@aar') {
         transitive = true
     }
     compile('com.github.afollestad.material-dialogs:commons:0.8.5.8@aar') {
         transitive = true
     }
-    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:design:25.0.0'
     compile project(path: ':library')
 }
